@@ -2,7 +2,7 @@
 
 React + TypeScript + TailwindCSS dashboard for FuelEU Maritime compliance management.
 
-## 🏗️ Architecture
+## Architecture
 
 This frontend follows **Hexagonal Architecture** (Ports & Adapters):
 
@@ -29,7 +29,7 @@ src/
 - **API clients** implement outbound ports
 - **Clean separation** of concerns
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -52,7 +52,7 @@ npm run dev
 
 Access the application at `http://localhost:5173`
 
-## 🎯 Features
+## Features
 
 ### 1. Routes Tab
 
@@ -133,7 +133,7 @@ Implement FuelEU Article 21 - Pooling:
 - Surplus ships cannot exit negative
 - Greedy allocation algorithm
 
-## 🧩 Component Structure
+## Component Structure
 
 ### Pages
 
@@ -164,7 +164,7 @@ Implement FuelEU Article 21 - Pooling:
 - Pool validation
 - Results table
 
-## 🎨 Styling
+## Styling
 
 Uses **TailwindCSS** for styling:
 
@@ -180,7 +180,7 @@ Uses **TailwindCSS** for styling:
 - **Danger:** Red (#ef4444) - Non-compliant, deficit
 - **Neutral:** Gray shades - Text, backgrounds
 
-## 📡 API Integration
+## API Integration
 
 ### HTTP Client
 

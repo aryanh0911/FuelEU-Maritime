@@ -2,7 +2,7 @@
 
 Backend API for the FuelEU Maritime Compliance Platform, built with Node.js, TypeScript, PostgreSQL, and Hexagonal Architecture.
 
-## 🏗️ Architecture
+## Architecture
 
 This project follows **Hexagonal Architecture** (Ports & Adapters / Clean Architecture):
 
@@ -34,7 +34,7 @@ src/
 - **Infrastructure** handles framework setup and cross-cutting concerns
 - Dependencies flow inward: Infrastructure → Adapters → Core
 
-## 🚀 Setup & Installation
+## Setup & Installation
 
 ### Prerequisites
 
@@ -87,7 +87,7 @@ npm run build
 npm start
 ```
 
-## 📡 API Endpoints
+## API Endpoints
 
 ### Routes
 
@@ -128,7 +128,7 @@ POST   /api/pools                                # Create a pool
        }
 ```
 
-## 🧮 Core Formulas
+## Core Formulas
 
 ### Compliance Balance (CB)
 
@@ -156,7 +156,7 @@ Greedy allocation:
    - Deficit ship cannot exit worse than before
    - Surplus ship cannot exit negative
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Run all tests
@@ -174,7 +174,7 @@ npm test -- --coverage
 - Unit tests: `src/core/application/__tests__/`
 - Integration tests: Test HTTP endpoints with Supertest
 
-## 🗄️ Database Schema
+## Database Schema
 
 ### Tables
 
@@ -197,7 +197,7 @@ npm test -- --coverage
 - Ships participating in a pool
 - Records CB before and after pooling
 
-## 📊 Sample Data
+## Sample Data
 
 The seed script (`npm run db:seed`) loads 5 routes:
 

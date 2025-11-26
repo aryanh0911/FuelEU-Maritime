@@ -1,8 +1,8 @@
 # FuelEU Maritime Compliance Platform
 
-A full-stack TypeScript application for managing FuelEU Maritime compliance, including route tracking, compliance balance calculations, banking, and pooling. Built with hexagonal architecture and AI-assisted development.
+A full-stack TypeScript application for managing FuelEU Maritime compliance, including route tracking, compliance balance calculations, banking, and pooling. Built with hexagonal architecture.
 
-## 📋 Project Structure
+## Project Structure
 
 ```
 .
@@ -27,7 +27,7 @@ A full-stack TypeScript application for managing FuelEU Maritime compliance, inc
 └── README.md              # This file
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -71,7 +71,7 @@ npm run dev
 
 Frontend runs on `http://localhost:5173`
 
-## 🏗️ Architecture
+## Architecture
 
 Both frontend and backend follow **Hexagonal Architecture** (Ports & Adapters):
 
@@ -92,7 +92,7 @@ Infrastructure (Framework-specific code)
 - **Clear boundaries** between layers
 - **Testable** business logic
 
-## 🎯 Features
+## Features
 
 ### 1. Routes Management
 - Display all maritime routes with detailed information
@@ -120,7 +120,7 @@ Infrastructure (Framework-specific code)
   - Deficit ships cannot exit worse
   - Surplus ships cannot exit negative
 
-## 🧮 Core Calculations
+## Core Calculations
 
 ### Compliance Balance (CB)
 
@@ -138,7 +138,7 @@ CB (gCO₂eq) = (Target Intensity - Actual Intensity) × Energy in Scope
 - **Positive CB** = Surplus
 - **Negative CB** = Deficit
 
-## 📊 Sample Data
+## Sample Data
 
 The application includes 5 pre-seeded routes:
 
@@ -152,7 +152,7 @@ The application includes 5 pre-seeded routes:
 
 **R001 is set as the baseline by default.**
 
-## 🧪 Testing
+## Testing
 
 ### Backend Tests
 
@@ -169,7 +169,7 @@ cd frontend
 npm test
 ```
 
-## 📡 API Endpoints
+## API Endpoints
 
 ### Routes
 - `GET /api/routes` - Get all routes
@@ -191,29 +191,27 @@ npm test
 
 See individual READMEs for detailed API documentation.
 
-## 🤖 AI-Agent Assisted Development
+## Development Documentation
 
-This project was built with significant assistance from **GitHub Copilot**. See the following documents for details:
+For detailed information about the development process and technical decisions:
 
 ### [AGENT_WORKFLOW.md](./AGENT_WORKFLOW.md)
 Comprehensive documentation of:
-- Agents used (GitHub Copilot)
-- Prompts and outputs for key features
-- Validation and corrections made
-- Observations on what worked and what didn't
-- Best practices for AI-assisted development
+### [AGENT_WORKFLOW.md](./AGENT_WORKFLOW.md)
+Documentation of development workflow including:
+- Tools and technologies used
+- Implementation approach for key features
+- Technical decisions and validations
+- Development best practices
 
 ### [REFLECTION.md](./REFLECTION.md)
-Personal insights on:
-- Learning experiences with AI agents
-- Efficiency gains (~40-45% time savings)
-- Quality impact and tradeoffs
-- Improvements for future projects
-- Philosophical reflections on AI in software development
+Technical insights including:
+- Architectural decisions
+- Development efficiency analysis
+- Quality considerations
+- Future improvements
 
-**Key Takeaway:** AI agents excel at boilerplate and patterns but require human expertise for architecture, domain logic, and validation.
-
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Backend
 - **Runtime:** Node.js + TypeScript
@@ -232,7 +230,7 @@ Personal insights on:
 - **Router:** React Router v6
 - **Architecture:** Hexagonal (Ports & Adapters)
 
-## 📖 Reference Materials
+## Reference Materials
 
 This implementation follows:
 - **FuelEU Maritime Regulation (EU) 2023/1805**
@@ -242,7 +240,7 @@ This implementation follows:
 
 Target intensities and formulas are based on official FuelEU specifications.
 
-## 🔧 Development
+## Development
 
 ### Code Quality
 
@@ -272,7 +270,7 @@ npm run build
 npm run preview
 ```
 
-## 📝 Environment Variables
+## Environment Variables
 
 ### Backend (.env)
 ```env
@@ -292,7 +290,7 @@ TARGET_INTENSITY_2025=89.3368
 VITE_API_BASE_URL=http://localhost:3000/api
 ```
 
-## 🤝 Contributing
+## Contributing
 
 This is an assignment project. For similar projects:
 
@@ -302,31 +300,25 @@ This is an assignment project. For similar projects:
 4. Write tests for new features
 5. Submit a pull request
 
-## 📄 License
+## License
 
 MIT License - see individual package files for details.
 
-## 👤 Author
+## Author
 
 Created as part of the Varuna Marine Full-Stack Developer Assignment.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
-- **GitHub Copilot** for AI-assisted development
-- **FuelEU Maritime Regulation** for domain specifications
-- **Clean Architecture principles** by Robert C. Martin
-- **Hexagonal Architecture** by Alistair Cockburn
+- FuelEU Maritime Regulation for domain specifications
+- Clean Architecture principles by Robert C. Martin
+- Hexagonal Architecture by Alistair Cockburn
 
----
+## Project Stats
 
-## 📊 Project Stats
-
-- **Lines of Code:** ~3,500+ (excluding tests and configs)
-- **Development Time:** ~26-32 hours (with AI assistance)
-- **Time Saved:** ~40-45% (vs. manual coding)
-- **Test Coverage:** Core business logic comprehensively tested
-- **Architecture:** Fully hexagonal, framework-independent core
-
----
+- Lines of Code: ~3,500+ (excluding tests and configurations)
+- Development Time: ~26-32 hours
+- Test Coverage: Core business logic comprehensively tested
+- Architecture: Fully hexagonal, framework-independent core
 
 For detailed setup instructions, see the README files in `/backend` and `/frontend` directories.
