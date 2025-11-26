@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import { RouteController } from '../adapters/inbound/http/route.controller';
-import { ComplianceController } from '../adapters/inbound/http/compliance.controller';
-import { BankingController } from '../adapters/inbound/http/banking.controller';
-import { PoolingController } from '../adapters/inbound/http/pooling.controller';
+import { RouteController } from '../../adapters/inbound/http/route.controller';
+import { ComplianceController } from '../../adapters/inbound/http/compliance.controller';
+import { BankingController } from '../../adapters/inbound/http/banking.controller';
+import { PoolingController } from '../../adapters/inbound/http/pooling.controller';
 
 export function createRoutes(
   routeController: RouteController,

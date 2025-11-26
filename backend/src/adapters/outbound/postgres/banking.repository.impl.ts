@@ -1,6 +1,6 @@
 import { BankEntry, BankSurplusDTO, BankingQuery } from '../../../core/domain/banking';
 import { BankingRepository } from '../../../core/ports/outbound/banking.repository';
-import { query } from '../../db/connection';
+import { query } from '../../../infrastructure/db/connection';
 
 export class PostgresBankingRepository implements BankingRepository {
   async findByShipAndYear(queryParams: BankingQuery): Promise<BankEntry[]> {

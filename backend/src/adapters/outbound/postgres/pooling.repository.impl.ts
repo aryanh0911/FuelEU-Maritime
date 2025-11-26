@@ -1,6 +1,6 @@
 import { Pool, PoolMember } from '../../../core/domain/pooling';
 import { PoolingRepository } from '../../../core/ports/outbound/pooling.repository';
-import { query } from '../../db/connection';
+import { query } from '../../../infrastructure/db/connection';
 
 export class PostgresPoolingRepository implements PoolingRepository {
   async createPool(year: number): Promise<Pool> {

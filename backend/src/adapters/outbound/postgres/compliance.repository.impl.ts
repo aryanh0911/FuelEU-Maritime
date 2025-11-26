@@ -5,7 +5,7 @@ import {
   AdjustedComplianceBalance,
 } from '../../../core/domain/compliance';
 import { ComplianceRepository } from '../../../core/ports/outbound/compliance.repository';
-import { query } from '../../db/connection';
+import { query } from '../../../infrastructure/db/connection';
 
 export class PostgresComplianceRepository implements ComplianceRepository {
   async findByShipAndYear(queryParams: ComplianceBalanceQuery): Promise<ComplianceBalance | null> {

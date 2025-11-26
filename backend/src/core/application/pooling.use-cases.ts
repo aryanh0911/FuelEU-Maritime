@@ -18,7 +18,7 @@ export class CreatePoolUseCase {
     const pool = await this.poolingRepository.createPool(dto.year);
 
     // Add members
-    const members = await this.poolingRepository.addMembers(
+    await this.poolingRepository.addMembers(
       pool.id,
       allocatedMembers.map((m) => ({
         shipId: m.shipId,

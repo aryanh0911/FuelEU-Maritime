@@ -1,6 +1,6 @@
 import { Route, CreateRouteDTO } from '../../../core/domain/route';
 import { RouteRepository } from '../../../core/ports/outbound/route.repository';
-import { query } from '../../db/connection';
+import { query } from '../../../infrastructure/db/connection';
 
 export class PostgresRouteRepository implements RouteRepository {
   async findAll(): Promise<Route[]> {
