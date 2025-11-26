@@ -1,4 +1,4 @@
-import { BankEntry, BankSurplusDTO, BankingQuery } from '../domain/banking';
+import { BankEntry, BankSurplusDTO, BankingQuery } from '../../domain/banking';
 
 export interface BankingRepository {
   findByShipAndYear(query: BankingQuery): Promise<BankEntry[]>;

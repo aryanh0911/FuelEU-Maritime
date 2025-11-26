@@ -1,4 +1,4 @@
-import { Pool, PoolMember, CreatePoolDTO } from '../domain/pooling';
+import { Pool, PoolMember } from '../../domain/pooling';
 
 export interface PoolingRepository {
   createPool(year: number): Promise<Pool>;

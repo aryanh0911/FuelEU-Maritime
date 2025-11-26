@@ -1,4 +1,4 @@
-import { ComplianceBalance, CreateComplianceBalanceDTO, ComplianceBalanceQuery, AdjustedComplianceBalance } from '../domain/compliance';
+import { ComplianceBalance, CreateComplianceBalanceDTO, ComplianceBalanceQuery, AdjustedComplianceBalance } from '../../domain/compliance';
 
 export interface ComplianceRepository {
   findByShipAndYear(query: ComplianceBalanceQuery): Promise<ComplianceBalance | null>;

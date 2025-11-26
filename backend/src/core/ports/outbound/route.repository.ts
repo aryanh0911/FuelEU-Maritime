@@ -1,4 +1,4 @@
-import { Route, CreateRouteDTO } from '../domain/route';
+import { Route, CreateRouteDTO } from '../../domain/route';
 
 export interface RouteRepository {
   findAll(): Promise<Route[]>;
